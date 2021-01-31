@@ -1,0 +1,9 @@
+--- 
+applications: 
+  - 
+    buildpacks: 
+      - staticfile_buildpack
+    memory: 128M
+    name: angularDashBoard
+    random-route: true
+    
