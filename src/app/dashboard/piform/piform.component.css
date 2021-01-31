@@ -1,7 +1,7 @@
-
+/* 
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-/* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+
 html, body { height: 100%; }
 body { margin: 0; font-family: sans-serif, "Helvetica Neue", sans-serif; }
 table {
@@ -93,4 +93,4 @@ table {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-}
+} */
