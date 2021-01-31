@@ -1,9 +1,7 @@
---- 
-applications: 
-  - 
-    buildpacks: 
-      - staticfile_buildpack
-    memory: 128M
-    name: angularDashBoard
-    random-route: true
-    
+---
+applications :
+- name: "angularDashBoard"
+  path : "dist/angularDashBoard"
+  memory : 256M
+  buildpack :
+  - "https://github.com/cloudfoundry/staticfile-buildpack.git"
