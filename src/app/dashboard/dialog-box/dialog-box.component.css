@@ -1,0 +1,70 @@
+/* Style inputs, select elements and textareas
+input[type=text], select, textarea{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+  
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  vertical-align: middle;
+  
+   
+}
+
+
+input[type=submit] {
+  background-color: rgb(60, 60, 199);
+  color: white;
+  padding: 12px 20px;
+  justify-content: center;
+  width:100px; 
+  margin:0 auto;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.container {
+  border-radius: 50px;
+  border-spacing: 0in;
+  border-width: 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  float: center;
+  position: relative;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  
+}
+
+.col-75 {
+  float: right;
+  width: 70%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ */
+ 
+ mat-form-field {
+  width: 100%;
+}
+mat-dialog-actions{
+  text-align: center;
+}

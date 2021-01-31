@@ -1,0 +1,67 @@
+<!-- 
+
+<app-header></app-header>
+
+<div class="custom">
+  
+  <form [formGroup]="form" (ngSubmit)="submit()">
+         
+    <label for="PI" >Private Instances: </label>
+    <select formControlName="pi_name" class="form-control"  >
+        <option value="Choose a Private Instance     " disabled>Choose a Private Instance</option>
+        <option id *ngFor="let pi of PIList" value={{pi.id}} >{{pi.private_instance__pi_name}}</option>
+    </select>
+    
+    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+
+
+</form></div>
+ 
+<div class="custom"  *ngIf="PIData">
+   <table> <tr>
+  <mat-form-field fxFlex="40%" >
+     <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Search">
+   </mat-form-field>
+<td></td>
+ 
+</tr>
+</table>
+</div>
+ 
+  
+   
+ 
+
+  <div class="wrapper">
+    
+  <table mat-table [dataSource]="this.PIData" matSort class="mat-elevation-z8" >
+    <ng-container matColumnDef="UserProfile.name">
+      <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let element"> {{ element["UserProfile.name"]}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="User.email">
+      <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header> Email</th>
+      <td mat-cell *matCellDef="let element"> {{element["User.email"]}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="User.dateJoined">
+      <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header> Date Joined </th>
+      <td mat-cell *matCellDef="let element"> {{element["User.dateJoined"]}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="User.lastLogin">
+      <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header> Last Login </th>
+      <td mat-cell *matCellDef="let element"> {{element["User.lastLogin"]}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table> 
+<p></p>
+    
+ 
+  <mat-paginator [pageSizeOptions]="[10, 30, 50]" showFirstLastButtons></mat-paginator> 
+
+</div> 
+ -->

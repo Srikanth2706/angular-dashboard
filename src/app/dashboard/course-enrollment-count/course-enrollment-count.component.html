@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+
+<div class="container">
+  
+  <form [formGroup] = "CEC" (ngSubmit) = "postData();">
+
+    <div class="row">
+      <div class="col-25">
+          <label for="private_instance">Private Iinstance:</label>
+      </div>
+      <div class="col-75">
+            <select formControlName="private_instance" class="form-control">
+              <option  >Select Private Instance  </option>
+              <option id *ngFor="let pi of PIList" [value]="pi.id" >{{pi.pi_name}}  </option>
+            </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="name" placeholder="Enter the same as Private Instance Name" formControlName="name">
+      </div>
+    </div>
+
+    <div class = "row" >
+          <div class="col-25">
+              <label for="url">URL:</label>
+          </div>
+          <div class="col-75">
+              <input type="text" class="form-control" id="url" placeholder="Enter the URL" formControlName="url">
+          </div>
+    </div>
+      
+    <div class="row">
+          <div class="col-25">
+              <label for="query_param">Query_Param:</label>
+          </div>
+          <div class="col-75">
+              <select formControlName="query_param" class="form-control">
+                  <option  >Select Query Param </option>
+                  <option id *ngFor="let p of pd" [value]="p.id"  >{{p.name}}  </option>
+              </select>
+          </div>
+  
+    </div>
+
+   
+    
+      
+    <div class="row">
+      <p></p>
+          <input type="submit" value="Add">
+    </div>
+  </form>
+</div>
+
+

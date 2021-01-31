@@ -1,0 +1,60 @@
+
+<app-header></app-header>
+
+
+<div class="container">
+ 
+  <form [formGroup] = "addpi" (ngSubmit) = "postData();">
+    <div class="row">
+      <div class="col-25">  
+        <label for="pi_name">PI Name:</label>
+      </div>
+      <div class="col-75">
+        <select formControlName="pi_name" class="form-control">
+        
+          <option >Choose a Private Instance</option>
+            <option id *ngFor="let pi of PIList"  >{{pi.pi_name}}  </option>
+        </select>
+      </div>
+    </div>
+   
+      
+    <div class="row">
+      <div class="col-25">
+        <label for="url">URL:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="url"  formControlName="url">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="params_key">API Params Key:</label>
+      </div>
+      <div class="col-75">
+            <input type="text" class="form-control" id="params_key" placeholder="Enter Private Instance API Params Key" formControlName="params_key">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="params_value">API Params Value:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="params_value" placeholder="Enter Private Instance API Params Value" formControlName="params_value">
+      </div>
+    </div>
+    
+    
+      <div class="row">
+        <p></p>
+        <input type="submit" value="Add">
+  </div>
+  </form>
+</div>
+
+
+
+

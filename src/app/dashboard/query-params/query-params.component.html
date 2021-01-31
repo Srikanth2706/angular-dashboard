@@ -1,0 +1,47 @@
+
+<app-header></app-header>
+
+
+<div class="container">
+ 
+  <form [formGroup] = "query_params_form" (ngSubmit) = "postData();">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="name" placeholder="Enter Query Param Name" formControlName="name">
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-25">
+          <label for="params_key">Parms_Key:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" class="form-control" id="params_key" placeholder="Enter params_key" formControlName="params_key">
+      </div>
+    </div>
+    
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="params_value">Params_Value:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="params_value" placeholder="Enter  params_value" formControlName="params_value">
+      </div>
+    </div>
+   
+   
+    
+    <div class="row">
+      <p></p>
+      <input type="submit" value="Add">
+    </div>
+  </form>
+</div>
+
+
+

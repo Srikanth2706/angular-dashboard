@@ -1,0 +1,91 @@
+
+
+<!-- <div class="container">
+ 
+  <form [formGroup] = "piform" (ngSubmit) = "postData();">
+    <div class="row">
+      <div class="col-25">
+        <label for="pi_name">PI Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="pi_name" placeholder="Enter Private Instance  Name" formControlName="pi_name">
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-25">
+        <label for="short_name">Short Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="short_namee" placeholder="Enter short name used in url" formControlName="short_name">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="instance_url">instance_url:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" id="pi_url" placeholder="Enter  Instance Base URL" formControlName="instance_url">
+    </div>
+      </div>
+   
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="developer_key">Developer Key:</label>
+      </div>
+      <div class="col-75">
+          <input type="text" class="form-control" id="developer_key" placeholder="Enter Developers key " formControlName="developer_key">
+      </div>
+    </div>
+    <p></p>
+    <div class="text-center">
+      <input type="submit"  value="Add">
+
+     
+    </div>
+  </form>
+</div> -->
+<!--   :any;short_name:any;developer_key:any;Actions:any; -->
+<!-- dialog-box.component.html -->
+<h1 mat-dialog-title>Row Action :: <strong>{{action}}</strong></h1>
+
+<div mat-dialog-content *ngIf="action != 'Delete'; else elseTemplate">
+
+<div >
+  <mat-form-field >
+    <label for="Private Instance Name"><b>Private Instance Name:</b></label>
+    <input  matInput [(ngModel)]="local_data.pi_name">
+  </mat-form-field>
+  </div>
+  <div>
+      <mat-form-field >
+        <label for="instance_url"><b>Instance URL:</b></label>
+    <input  matInput [(ngModel)]="local_data.instance_url">
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field >
+    <label for="Short Name"><b>Short Name:</b></label>
+    <input  matInput [(ngModel)]="local_data.short_name">
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field >
+    <label for="Developer Key"><b>Developer Key:</b></label>
+    <input  matInput [(ngModel)]="local_data.developer_key">
+  </mat-form-field>
+</div>
+
+</div>
+<div> 
+  <ng-template #elseTemplate >
+    Sure to delete <b>{{local_data.pi_name}} Private Instance</b>?
+  </ng-template>
+  </div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

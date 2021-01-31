@@ -1,0 +1,50 @@
+
+<app-header></app-header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p></p>
+
+<div class="container">
+ 
+  <form [formGroup] = "addPICourseAPI" (ngSubmit) = "postData();">
+    <div class="form-group">
+        
+        <label for="pi_name">PI Name:</label>
+        <select formControlName="pi_name" class="form-control">
+        
+          <option >Choose a Private Instance</option>
+            <option id *ngFor="let pi of PIList"  >{{pi.pi_name}}  </option>
+        </select>
+ 
+      </div>
+   
+    <div class="form-group">
+        <label for="base_url">base_url:</label>
+        <input type="text" class="form-control" id="base_url" placeholder="Example: https://courses" formControlName="base_url">
+      </div>
+
+
+    <div class="form-group">
+        <label for="actual_url">actual_url:</label>
+        <input type="text" class="form-control" id="actual_url" placeholder="Example: api/courses/v1/courses/" formControlName="actual_url">
+      </div>
+
+    
+    
+      <button type="submit" class="btn btn-primary">Add PI</button>
+  </form>
+</div>
+
+</body>
+</html>

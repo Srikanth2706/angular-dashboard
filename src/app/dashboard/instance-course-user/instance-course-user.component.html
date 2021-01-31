@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+
+<p></p>
+
+ <div class="wrapper">
+   <table mat-table [dataSource]="PIData" matSort class="mat-elevation-z8" >
+     <ng-container matColumnDef="private_instance">
+       <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header>Private Instance</th>
+       <td mat-cell *matCellDef="let element"> {{ element["private_instance"]}} </td>
+     </ng-container>
+ 
+     <ng-container matColumnDef="courses_count">
+       <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header>Total Courses</th>
+       <td mat-cell *matCellDef="let element"> {{element["courses_count"]}} </td>
+     </ng-container>
+
+     <ng-container matColumnDef="users_count">
+        <th id ='th' mat-header-cell *matHeaderCellDef mat-sort-header>Total Users</th>
+        <td mat-cell *matCellDef="let element"> {{element["users_count"]}} </td>
+      </ng-container>
+ 
+
+ 
+     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   </table> 
+ <p></p>
+      <!-- pagination   -->
+  
+   <mat-paginator [pageSizeOptions]="[10, 30, 50]" showFirstLastButtons></mat-paginator> 
+ 
+ </div> 
+ 
+ 

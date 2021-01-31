@@ -1,0 +1,51 @@
+<!-- 
+<h1 mat-dialog-title>Row Action :: <strong>{{action}}</strong></h1>
+
+<div mat-dialog-content *ngIf="action != 'Delete'; else elseTemplate">
+
+<div >
+  <mat-form-field>
+    <mat-select [(ngModel)]="gender">
+      <mat-option *ngFor="let p of PIData" [value]="p">{{ p }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+    
+
+</div>
+
+  <div>
+      <mat-form-field >
+        <label for="name"><b>Name:</b></label>
+    <input  matInput [(ngModel)]="local_data.name">
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field >
+    <label for="url"><b>URL:</b></label>
+    <input  matInput [(ngModel)]="local_data.url">
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field >
+    <label for="query_param"><b> Query Param:</b></label>
+<input  matInput [(ngModel)]="local_data.query_param">
+</mat-form-field>
+</div>
+<div>
+<mat-form-field >
+<label for="private_instance"><b>Private Instance:</b></label>
+<input  matInput [(ngModel)]="local_data.private_instance">
+</mat-form-field>
+</div>
+
+<div> 
+  <ng-template #elseTemplate >
+    Sure to delete <b>{{local_data.name}} Private Instance</b>?
+  </ng-template>
+  </div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div> -->
