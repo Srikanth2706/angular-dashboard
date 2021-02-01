@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'cec', component: CourseEnrollmentCountComponent},
   { path: 'coursestatistics',component: CourseStatisticsComponent},
   { path: 'icu',component:InstanceCourseUserComponent },
+  { path: '',component:InstanceCourseUserComponent },
 
   { path: 'coursegradeform',component: CourseGradeFormComponent},
   { path: 'userscoursegrade',component:LearnersWithCourseGradeComponent },

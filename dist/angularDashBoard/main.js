@@ -2160,6 +2160,7 @@ const routes = [
     { path: 'cec', component: _dashboard_course_enrollment_count_course_enrollment_count_component__WEBPACK_IMPORTED_MODULE_8__["CourseEnrollmentCountComponent"] },
     { path: 'coursestatistics', component: _dashboard_course_statistics_course_statistics_component__WEBPACK_IMPORTED_MODULE_9__["CourseStatisticsComponent"] },
     { path: 'icu', component: _dashboard_instance_course_user_instance_course_user_component__WEBPACK_IMPORTED_MODULE_10__["InstanceCourseUserComponent"] },
+    { path: '', component: _dashboard_instance_course_user_instance_course_user_component__WEBPACK_IMPORTED_MODULE_10__["InstanceCourseUserComponent"] },
     { path: 'coursegradeform', component: _dashboard_course_grade_form_course_grade_form_component__WEBPACK_IMPORTED_MODULE_11__["CourseGradeFormComponent"] },
     { path: 'userscoursegrade', component: _dashboard_learners_with_course_grade_learners_with_course_grade_component__WEBPACK_IMPORTED_MODULE_12__["LearnersWithCourseGradeComponent"] },
 ];
