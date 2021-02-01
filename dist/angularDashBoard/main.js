@@ -2151,7 +2151,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: 'users', component: _dashboard_piapi_piapi_component__WEBPACK_IMPORTED_MODULE_2__["PiapiComponent"] },
+    { path: 'user', component: _dashboard_piapi_piapi_component__WEBPACK_IMPORTED_MODULE_2__["PiapiComponent"] },
     { path: 'piapi', component: _dashboard_addapiform_addapiform_component__WEBPACK_IMPORTED_MODULE_3__["AddapiformComponent"] },
     { path: 'pi', component: _dashboard_piform_piform_component__WEBPACK_IMPORTED_MODULE_4__["PiformComponent"] },
     { path: 'courseapi', component: _dashboard_picourseapi_picourseapi_component__WEBPACK_IMPORTED_MODULE_6__["PicourseapiComponent"] },

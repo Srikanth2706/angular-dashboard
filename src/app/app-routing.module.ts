@@ -13,7 +13,7 @@ import {CourseGradeFormComponent} from './dashboard/course-grade-form/course-gra
 import {LearnersWithCourseGradeComponent} from './dashboard/learners-with-course-grade/learners-with-course-grade.component'
 
 const routes: Routes = [
-  { path: 'users', component: PiapiComponent },
+  { path: 'user', component: PiapiComponent },
   { path: 'piapi', component: AddapiformComponent },
   { path: 'pi', component: PiformComponent },
   { path: 'courseapi',component: PicourseapiComponent },
@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'coursestatistics',component: CourseStatisticsComponent},
   { path: 'icu',component:InstanceCourseUserComponent },
   { path: '',component:InstanceCourseUserComponent },
+
 
   { path: 'coursegradeform',component: CourseGradeFormComponent},
   { path: 'userscoursegrade',component:LearnersWithCourseGradeComponent },
